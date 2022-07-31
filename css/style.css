@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --orange : #ff7800;
+  --black : #130f40;
+  --light-color: #666;
+  --box-shodow: 0 .5rem 1rem rgba(0,0,0,,1);
+  --outline : .1rem solid rgba(0,0,0,.1);
+  --outline-hover:.2rem solid var(--black);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  border: none;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+body{
+  background: #eee;
+}
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: var(--box-shodow);
+  padding: 2rem 9%;
+
+  
+}
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+.header .logo i {
+  color: var(--orange);
+}
+.header .nav a {
+color: var(--black);
+font-size: 1.7rem;
+margin: 0 1rem;
+}
+.header .nav a:hover{
+  color: var(--orange);
+}
+ .header .icons div{
+  background: #eee;
+  color: var(--black);
+  height: 4.5rem;
+  width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+ }
+ .header .icons div:hover{
+  background-color: var(--orange);
+  color: #fff;
+ }
+ .search-from{
+  position: absolute;
+  top: 110%;
+ }
