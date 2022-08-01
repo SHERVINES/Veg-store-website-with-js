@@ -73,7 +73,35 @@ margin: 0 1rem;
   background-color: var(--orange);
   color: #fff;
  }
- .search-from{
+ .header .search-from{
   position: absolute;
   top: 110%;
+  right: -110%;
+  width: 50rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: var(--box-shodow);
  }
+ .header .search-from input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0 1.5rem;
+
+ }
+ .header .search-from label{
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+cursor: pointer;
+ }
+.header .search-from label:hover{
+  color: var(--orange);
+}
