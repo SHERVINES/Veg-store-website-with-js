@@ -73,6 +73,9 @@ margin: 0 1rem;
   background-color: var(--orange);
   color: #fff;
  }
+ #menu-btn{
+  display: none;
+ }
  .header .search-from{
   position: absolute;
   top: 110%;
@@ -85,6 +88,10 @@ margin: 0 1rem;
   align-items: center;
   overflow: hidden;
   box-shadow: var(--box-shodow);
+ }
+ .header .search-from.active{
+  right: 2rem;
+transition: .4s linear;
  }
  .header .search-from input {
   height: 100%;
