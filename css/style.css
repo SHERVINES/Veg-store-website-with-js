@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
-  --orange : #ff7800;
-  --black : #130f40;
+  --orange: #ff7800;
+  --black: #130f40;
   --light-color: #666;
-  --box-shodow: 0 .5rem 1rem rgba(0,0,0,,1);
-  --outline : .1rem solid rgba(0,0,0,.1);
-  --outline-hover:.2rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--black);
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -19,13 +19,27 @@
   text-transform: capitalize;
   border: none;
 }
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
 }
-body{
+body {
   background: #eee;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--black);
+  cursor: pointer;
+  color: var(--black);
+}
+.btn:hover{
+  color: #fff;
+  background: var(--orange);
 }
 .header {
   position: fixed;
@@ -37,10 +51,8 @@ body{
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  box-shadow: var(--box-shodow);
+  box-shadow: var(--box-shadow);
   padding: 2rem 9%;
-
-  
 }
 .header .logo {
   font-size: 2.5rem;
@@ -51,49 +63,49 @@ body{
   color: var(--orange);
 }
 .header .nav a {
-color: var(--black);
-font-size: 1.7rem;
-margin: 0 1rem;
+  color: var(--black);
+  font-size: 1.7rem;
+  margin: 0 1rem;
 }
-.header .nav a:hover{
+.header .nav a:hover {
   color: var(--orange);
 }
- .header .icons div{
+.header .icons div {
   background: #eee;
   color: var(--black);
   height: 4.5rem;
   width: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: .5rem;
-    font-size: 2rem;
-    margin-right: .3rem;
-    text-align: center;
- }
- .header .icons div:hover{
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  margin-right: 0.3rem;
+  text-align: center;
+}
+.header .icons div:hover {
   background-color: var(--orange);
   color: #fff;
- }
- #menu-btn{
+}
+#menu-btn {
   display: none;
- }
- .header .search-from{
+}
+.header .search-from {
   position: absolute;
   top: 110%;
   right: -110%;
   width: 50rem;
   height: 5rem;
   background: #fff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   overflow: hidden;
   box-shadow: var(--box-shodow);
- }
- .header .search-from.active{
+}
+.header .search-from.active {
   right: 2rem;
-transition: .4s linear;
- }
- .header .search-from input {
+  transition: 0.4s linear;
+}
+.header .search-from input {
   height: 100%;
   width: 100%;
   background: none;
@@ -101,14 +113,74 @@ transition: .4s linear;
   font-size: 1.6rem;
   color: var(--black);
   padding: 0 1.5rem;
-
- }
- .header .search-from label{
+}
+.header .search-from label {
   font-size: 2.2rem;
   padding-right: 1.5rem;
   color: var(--black);
-cursor: pointer;
- }
-.header .search-from label:hover{
+  cursor: pointer;
+}
+.header .search-from label:hover {
   color: var(--orange);
+}
+.header .shopping-cart {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  width: 35rem;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.header .shopping-cart.active{
+  right: 2rem;
+  transition: .4s linear;
+}
+.header .shopping-cart .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
+.header .shopping-cart .box img {
+  height: 10rem;
+}
+.header .shopping-cart .box .fa-trash {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  color: var(--light-color);
+  right: 2rem;
+  transform: translateY(-50%);
+}
+.header .shopping-cart .box .fa-trash:hover {
+  color: var(--orange);
+}
+.header .shopping-cart .box h3 {
+  color: var(--black);
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box span {
+  color: var(--light-color);
+  font-size: 1.6rem;
+}
+
+.header .shopping-cart .box .quantity {
+  padding-left: 1rem;
+}
+.header .shopping-cart .total {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-align: center;
+  padding: 1rem 0;
+}
+.header .shopping-cart .btn {
+  display: block;
+  text-align: center;
+  margin: 1rem;
 }
