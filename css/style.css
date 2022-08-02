@@ -38,7 +38,7 @@ body {
   color: var(--black);
   background: none;
 }
-.btn:hover{
+.btn:hover {
   color: #fff;
   background: var(--orange);
 }
@@ -134,9 +134,9 @@ body {
   border-radius: 0.5rem;
   background: #fff;
 }
-.header .shopping-cart.active{
+.header .shopping-cart.active {
   right: 2rem;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 .header .shopping-cart .box {
   display: flex;
@@ -185,43 +185,115 @@ body {
   text-align: center;
   margin: 1rem;
 }
-.header .login-form{
+.header .login-form {
   position: absolute;
   top: 110%;
   right: -110%;
   width: 30rem;
   box-shadow: var(--box-shadow);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background: #fff;
   padding: 2rem;
   text-align: center;
 }
-.header .login-form.active{
+.header .login-form.active {
   right: 2rem;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
-.header .login-form h3{
+.header .login-form h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: var(--black);
 }
-.header .login-form .box{
+.header .login-form .box {
   text-transform: none;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
   background: #eee;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
   font-size: 1.6rem;
   color: var(--black);
   width: 100%;
 }
-.header .login-form p{
+.header .login-form p {
   font-size: 1.4rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   color: var(--light-color);
 }
 .header .login-form p a {
   color: var(--orange);
   text-decoration: underline;
-padding-left: .5rem;
+  padding-left: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 991px) {
+html{
+  font-size: 55%;
+}
+.header{
+  padding: 2rem;
+}
+
+}
+@media (max-width:768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .nav{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+  }
+  .header .nav.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+  .header .nav a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+  .header .search-from {
+    width: 90%;
+  }
+}
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
 }
